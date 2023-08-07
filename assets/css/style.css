@@ -152,3 +152,93 @@ header nav .right__side .menu__btn {
 header nav .right__side .menu__btn:hover {
     color: #343434;
 }
+
+header section {
+    width: 100%;
+    border: 1px solid #000;
+    position: absolute;
+    top: 15%;
+    height: 85%;  
+}
+
+header section .content__bx {
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+
+header section .content__bx h1 {
+    font-family: coffee;
+    font-size: 75px;
+}
+
+header section .content__bx p {
+    font-size: 13px;
+    margin-top: 10px;
+    width: 300px;
+    line-height: 25px;
+}
+
+header section .content__bx a:nth-child(3) {
+    position: relative;
+    font-size: 14px;
+    color: #343434;
+    text-decoration: none;
+    font-family: coffee;
+    top: 15px;
+    transition: all 0.4s ease-in-out;
+}
+
+header section .content__bx a:nth-child(3):hover {
+    color: gray;
+}
+
+header section .content__bx a:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 3px;
+    background: #343434;
+    bottom: -5px;
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+header section .content__bx a:nth-child(3):hover::before {
+    width: 100%;
+    background: gray;
+}
+
+header section .content__bx .price__bx {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 90px;
+}
+
+header section .content__bx .price__bx h5 {
+    font-family: coffee;
+    font-size: 60px;
+}
+
+header section .content__bx .price__bx button {
+    border-radius: 50%;
+    background: #fec800;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 1px 4px;
+    margin-left: 30px;
+    cursor: pointer; 
+    transition: all 0.4s ease-in-out;
+}
+
+header section .content__bx .price__bx button i {
+    font-size: 35px;
+}
+
+header section .content__bx .price__bx button:hover {
+    transform: rotate(360deg);
+}
