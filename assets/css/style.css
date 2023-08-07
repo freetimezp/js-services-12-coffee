@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: coffee;
+    src: url('../font/timesbi.ttf');
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background: #fec800;
+    z-index: -2;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background: #efefed;
+    z-index: -2;
+}
+
+header nav {
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    padding: 0 2.5%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .left__side,
+header nav .right__side {
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header nav .left__side .logo {
+    width: 70px;
+    margin-right: 20px;
+}
+
+header nav .left__side .nav__card {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+header nav .left__side .search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;   
+}
+
+header nav .left__side .search input {
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid #343434;
+    border-bottom-left-radius: 10px;
+    padding-left: 20px;
+}
+
+header nav .left__side .search i {
+    font-size: 22px;
+    transform: rotate(85deg);
+    position: relative;
+    top: -3px;
+}
+
+header nav .right__side ul {
+    display: flex;
+    align-items: center; 
+    list-style: none;
+}
+
+header nav .right__side ul li {
+    margin-left: 20px;
+}
+
+header nav .right__side ul li a {
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.4s linear;
+}
+
+header nav .right__side ul li a:hover {
+    color: #343434;
+}
+
+header nav .right__side .help {
+    margin: 0 20px 0 40px;
+    border-bottom: 2px solid #fff;
+    transition: all 0.4s linear;
+}
+
+header nav .right__side .help a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.4s linear;
+}
+
+header nav .right__side .help:hover {
+    border-bottom: 2px solid #343434;
+}
+
+header nav .right__side .help a:hover {
+    color: #343434;
+}
+
+header nav .right__side .menu__btn {
+    color: #fff;
+    margin-left: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+header nav .right__side .menu__btn:hover {
+    color: #343434;
+}
