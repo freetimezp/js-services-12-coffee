@@ -461,5 +461,7 @@ header section .cart__pagi .cart .cart__bx .coffee__cards .card .img_title .titl
     color: #000;
 }
 
-
+header section .cart__pagi .cart .cart__bx .coffee__total {
+    padding: 0 20px;
+}
 
