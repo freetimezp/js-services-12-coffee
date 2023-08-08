@@ -155,10 +155,10 @@ header nav .right__side .menu__btn:hover {
 
 header section {
     width: 100%;
-    border: 1px solid #000;
     position: absolute;
     top: 15%;
     height: 85%;  
+    display: flex;
 }
 
 header section .content__bx {
@@ -242,3 +242,224 @@ header section .content__bx .price__bx button i {
 header section .content__bx .price__bx button:hover {
     transform: rotate(360deg);
 }
+
+section .steps {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 80%;
+    background: #fec800;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+section .steps h4, h6 {
+    color: #fff;
+}
+
+section .steps h6 {
+    position: relative;
+    width: 2px;
+    height: 120px;
+    background: #fff;
+    cursor: pointer;
+}
+
+section .steps h6::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    transform: rotate(45deg);
+    left: -7px;
+    top: -3px;
+}
+
+section .steps h6::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    transform: rotate(-45deg);
+    right: -7px;
+    top: -3px;
+}
+
+section .steps h6:nth-child(3)::before {
+    transform: rotate(-45deg);
+    left: -7px;
+    top: unset;
+    bottom: -3px;
+}
+
+section .steps h6:nth-child(3):after {
+    transform: rotate(45deg);
+    right: -7px;
+    top: unset;
+    bottom: -3px;
+}
+
+header section .main__img {
+    position: absolute;
+    right: 26%;
+    top: 0;
+    width: 480px;
+}
+
+header section .cart__pagi {
+    position: absolute;
+    width: 70px;
+    height: 90%;
+    right: 3%;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header section .cart__pagi .pagi {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.4s ease-in-out;
+}
+
+header section .cart__pagi .pagi button {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin: 10px 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+header section .cart__pagi .pagi button:hover {
+    width: 15px;
+    height: 15px;
+}
+
+header section .cart__pagi .pagi button:nth-child(1) {
+    width: 15px;
+    height: 15px;
+}
+
+header section .cart__pagi .cart {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header section .cart__pagi .cart .bi-cart4 {
+    padding: 5px 12px;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 22px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+header section .cart__pagi .cart .bi-cart4:hover {
+    transform: rotate(360deg);
+}
+
+header section .cart__pagi .cart .cart__bx {
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+    width: 200px;
+    height: 0px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.3s linear;
+    opacity: 0;
+}
+
+header section .cart__pagi .cart .cart__bx_active {
+    opacity: 1;
+    height: 250px;
+}
+
+header section .cart__pagi .cart .cart__bx .coffee__cards {
+    width: 100%;
+    height: 80%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+header section .cart__pagi .cart .cart__bx .coffee__cards::-webkit-scrollbar {
+    width: 5px;
+    background: rgba(254, 200, 0, 0.3);
+}
+
+header section .cart__pagi .cart .cart__bx .coffee__cards::-webkit-scrollbar-thumb {
+    width: 5px;
+    background: rgb(254, 200, 0);
+    border-radius: 10px;
+}
+
+header section .cart__pagi .cart .cart__bx .coffee__total {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header section .cart__pagi .cart .cart__bx .coffee__cards .card {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+header section .cart__pagi .cart .cart__bx .coffee__cards .card i {
+    cursor: pointer;
+}
+
+header section .cart__pagi .cart .cart__bx .coffee__cards .card .img_title {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed #fec800;
+    padding-bottom: 5px;
+}
+
+header section .cart__pagi .cart .cart__bx .coffee__cards .card .img_title img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+header section .cart__pagi .cart .cart__bx .coffee__cards .card .img_title .title_price h5 {
+    font-size: 12px;
+}
+
+header section .cart__pagi .cart .cart__bx .coffee__cards .card .img_title .title_price h6 {
+    color: #000;
+}
+
+
+
