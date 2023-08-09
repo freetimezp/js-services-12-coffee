@@ -257,7 +257,7 @@ section .steps {
 }
 
 section .steps h4, h6 {
-    color: #fff;
+    color: #000;
 }
 
 section .steps h6 {
